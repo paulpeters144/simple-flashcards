@@ -28793,7 +28793,7 @@ break
 case 5:return A.I(null,r)
 case 1:return A.H(p,r)}})
 return A.J($async$alC,r)},
-o5(){switch("local"){case"local":return"http://localhost:5000"
+o5(){switch("prod"){case"local":return"http://localhost:5000"
 case"prod":return"https://n32ynsmleytkasefsmw2tckire0cmauk.lambda-url.us-east-1.on.aws"
 default:throw A.d("no ENV setup in the enviroment.dart file")}},
 b0T(a){var s,r,q,p
