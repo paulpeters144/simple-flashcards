@@ -9647,14 +9647,15 @@ a55:function a55(a){this.a=a},
 aUI(){return new A.AX(new A.afI(),A.v(t.K,t.Qu))},
 F_:function F_(a,b){this.a=a
 this.b=b},
-BL:function BL(a,b,c,d,e,f,g){var _=this
+BL:function BL(a,b,c,d,e,f,g,h){var _=this
 _.as=a
 _.at=b
 _.ch=c
-_.cy=d
-_.fr=e
-_.p4=f
-_.a=g},
+_.CW=d
+_.cy=e
+_.fr=f
+_.p4=g
+_.a=h},
 afI:function afI(){},
 afL:function afL(){},
 H2:function H2(a){var _=this
@@ -47242,15 +47243,16 @@ p=A.a8(102,o.gn(o)>>>16&255,o.gn(o)>>>8&255,o.gn(o)&255)}n=j.a
 if(n==null)n=q.ax.b
 m.a.toString
 return new A.Dk(A.a8j(new A.yV(q,new A.dA(new A.auN(m,b),l),B.D,B.V,l,l),n,l,l,p),l)},
-a83(a){var s,r,q=this,p=null,o=q.a,n=o.cy
-n=n.fr
-s=n
+a83(a){var s,r,q,p=this,o=null,n=p.a,m=n.cy
+m=m.fr
+s=m
 if(s==null)s=B.eC
-n=o.as
-o=o.at
-r=q.gagN()
-q.a.toString
-return new A.Fj(p,p,p,p,n,o,p,p,p,p,p,p,p,p,q.gagU(),"",p,B.Z6,s,p,r,p,p,B.oo,!1,!1,!1,!1,q.gag4(),!1,p,p,p,new A.f9(q,t.bT))},
+m=n.as
+r=n.at
+n=n.CW
+q=p.gagN()
+p.a.toString
+return new A.Fj(o,o,o,o,m,r,o,o,o,o,o,o,o,o,p.gagU(),n,o,B.Z6,s,o,q,o,o,B.oo,!1,!1,!1,!1,p.gag4(),!1,o,o,o,new A.f9(p,t.bT))},
 C(a){var s,r=null,q=A.fu(!1,!1,this.a83(a),r,r,r,r,!0,r,r,new A.auO(),r,r,r)
 this.a.toString
 s=this.d
@@ -91594,7 +91596,7 @@ m=A.oj("ffc409")
 l=A.oj("92949c")
 k=A.oj("12D73")
 i=A.aFa(j,r.aq4(new A.i1(A.oj("F0F1F8")>>>0),new A.i1(k>>>0),new A.i1(q>>>0),new A.i1(o>>>0),new A.i1(p>>>0),new A.i1(n>>>0),new A.i1(m>>>0),new A.i1(l>>>0)),"Magra",B.uC,new A.i1(i>>>0),B.Zo,j)
-return new A.BL(new A.a6a(),s,A.aTg(),i,B.ZE,!1,j)}}
+return new A.BL(new A.a6a(),s,A.aTg(),"Simple Flashcards IO",i,B.ZE,!1,j)}}
 A.Mx.prototype={
 C(a){var s=t.IU
 return A.ix(A.kD(new A.a7v(),s),new A.a7w(this),s)}}
@@ -93750,7 +93752,7 @@ k=new A.Ts(A.b([],k),i)
 k.jh(0,l,l)
 m=t.xo
 k=A.b([j,s,r,q,p,o,n,k],m)
-k=new A.lP(A.aG(t.Fc),new A.LK(k).gLr(),B.Bs,A.b([new A.LI(A.b(["/desktop","/folder","/deck-edit","/study"],t._7),new A.afD(b),new A.afE())],t.H4),new A.b4(l,t.b7),A.b([],m),A.aJ1(),A.b([],t.zE),i)
+k=new A.lP(A.aG(t.Fc),new A.LK(k).gLr(),B.Br,A.b([new A.LI(A.b(["/desktop","/folder","/deck-edit","/study"],t._7),new A.afD(b),new A.afE())],t.H4),new A.b4(l,t.b7),A.b([],m),A.aJ1(),A.b([],t.zE),i)
 k.id=new A.q1(B.e_,l,!1,!1,!0)
 k.a=new A.cn("/",l,l)
 return k}}
@@ -93762,34 +93764,34 @@ $2(a,b){return"/"},
 $S:619}
 A.Uy.prototype={
 gkl(){return A.b(["/welcome"],t.s)},
-kI(a,b){return A.b([B.Br],t.zE)}}
+kI(a,b){return A.b([B.Bt],t.zE)}}
 A.Nf.prototype={
 gkl(){return A.b(["/desktop"],t.s)},
-kI(a,b){return A.b([B.Bu],t.zE)}}
+kI(a,b){return A.b([B.Bs],t.zE)}}
 A.Of.prototype={
 gkl(){return A.b(["/folder/:folderId"],t.s)},
 kI(a,b){var s=b.b.h(0,"folderId")
 if(s==null)s=""
-return A.b([A.LJ(new A.AN(s,null),new A.ce("/folder-"+s,t.kK),"Simple Flashcards",B.c6)],t.zE)}}
+return A.b([A.LJ(new A.AN(s,null),new A.ce("/folder-"+s,t.kK),"Simple Flashcards IO",B.c6)],t.zE)}}
 A.Mw.prototype={
 gkl(){return A.b(["/confirm-account/:token"],t.s)},
-kI(a,b){return A.b([A.LJ(new A.Mx(b.c.h(0,"token"),null),B.a0k,"Simple Flashcards",B.c6)],t.zE)}}
+kI(a,b){return A.b([A.LJ(new A.Mx(b.c.h(0,"token"),null),B.a0k,"Simple Flashcards IO",B.c6)],t.zE)}}
 A.Q5.prototype={
 gkl(){return A.b(["/create-new-password"],t.s)},
-kI(a,b){return A.b([A.LJ(new A.Q6(b.c.h(0,"token"),null),B.a0j,"Simple Flashcards",B.c6)],t.zE)}}
+kI(a,b){return A.b([A.LJ(new A.Q6(b.c.h(0,"token"),null),B.a0j,"Simple Flashcards IO",B.c6)],t.zE)}}
 A.Sb.prototype={
 gkl(){return A.b(["/"],t.s)},
-kI(a,b){return A.b([B.Bt],t.zE)}}
+kI(a,b){return A.b([B.Bu],t.zE)}}
 A.N0.prototype={
 gkl(){return A.b(["/deck-edit/:deckId"],t.s)},
 kI(a,b){var s=b.b.h(0,"deckId")
 if(s==null)s=""
-return A.b([A.LJ(new A.N1(s,null),new A.ce("/deck-edit-"+s,t.kK),"Simple Flashcards",B.c6)],t.zE)}}
+return A.b([A.LJ(new A.N1(s,null),new A.ce("/deck-edit-"+s,t.kK),"Simple Flashcards IO",B.c6)],t.zE)}}
 A.Ts.prototype={
 gkl(){return A.b(["/study/:deckId"],t.s)},
 kI(a,b){var s=b.b.h(0,"deckId")
 if(s==null)s=""
-return A.b([A.LJ(new A.Tt(s,null),new A.ce("/study-"+s,t.kK),"Simple Flashcards",B.c6)],t.zE)}}
+return A.b([A.LJ(new A.Tt(s,null),new A.ce("/study-"+s,t.kK),"Simple Flashcards IO",B.c6)],t.zE)}}
 A.pQ.prototype={
 vZ(a,b){return this.aut(a,b)},
 aut(a,b){var s=0,r=A.K(t.KE),q,p=2,o,n=this,m,l,k,j,i,h,g,f
@@ -98916,21 +98918,21 @@ B.iV=new A.anr()
 B.Bp=new A.nP("flutter/lifecycle",B.iV,A.aD("nP<l?>"))
 B.Bq=new A.nP("flutter/system",B.cB,t.Al)
 B.c6=new A.a5S(0,"material")
-B.a0u=new A.Ux(null)
-B.a0l=new A.ce("/welcome",t.kK)
-B.Br=new A.jo(B.a0u,"Simple Flashcards",B.c6,B.a0l,null,null)
 B.ZC=new A.pd("Not found",null,null,null,null,null,null,null,null,null)
 B.DB=new A.q8(B.C,null,null,B.ZC,null)
 B.O=new A.Nv(1,"start")
 B.SS=new A.fD(null,B.DB,null)
 B.a0i=new A.ce("not-found",t.kK)
-B.Bs=new A.jo(B.SS,"Not found",B.c6,B.a0i,null,null)
-B.SQ=new A.Sc(null)
-B.a0o=new A.ce("/",t.kK)
-B.Bt=new A.jo(B.SQ,"Simple Flashcards",B.c6,B.a0o,null,null)
+B.Br=new A.jo(B.SS,"Not found",B.c6,B.a0i,null,null)
 B.JQ=new A.AN("desktop",null)
 B.a0q=new A.ce("/desktop",t.kK)
-B.Bu=new A.jo(B.JQ,"Simple Flashcards",B.c6,B.a0q,null,null)
+B.Bs=new A.jo(B.JQ,"Simple Flashcards IO",B.c6,B.a0q,null,null)
+B.a0u=new A.Ux(null)
+B.a0l=new A.ce("/welcome",t.kK)
+B.Bt=new A.jo(B.a0u,"Simple Flashcards IO",B.c6,B.a0l,null,null)
+B.SQ=new A.Sc(null)
+B.a0o=new A.ce("/",t.kK)
+B.Bu=new A.jo(B.SQ,"Simple Flashcards IO",B.c6,B.a0o,null,null)
 B.e_=new A.N9()
 B.fj=new A.q1(B.e_,null,!1,!1,!0)
 B.Bv=new A.LM(13,"modulate")
