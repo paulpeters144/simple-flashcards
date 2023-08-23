@@ -1,6 +1,6 @@
 {
     "name": "Simple Flashcards IO",
-    "short_name": "SFIO",
+    "short_name": "SimpleFlashcards",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
