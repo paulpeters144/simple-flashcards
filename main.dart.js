@@ -92586,7 +92586,7 @@ if(r==="folder")new A.ez(a).YJ(s.a)
 else if(r==="deck")new A.ez(a).av0(s.a)}}
 A.a8I.prototype={
 $0(){var s=this.a,r=s.a,q=r.a.a
-if(q.length>26){r.scP(0,B.c.a5(q,0,25))
+if(q.length>36){r.scP(0,B.c.a5(q,0,35))
 r.snz(A.eL(B.i,r.a.a.length))
 s.a6()}return null},
 $S:0}
